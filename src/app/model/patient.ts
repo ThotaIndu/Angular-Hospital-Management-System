@@ -17,7 +17,6 @@ export class Patient{
     this.username=username;
     this.age=age;
     this.gender=gender;
-  
     this.payment=payment;
     this.password=password;
 
