@@ -1,0 +1,17 @@
+<p>patientsignup works!</p>
+<form #PatientSignIn="ngForm" (ngSubmit)="onSubmit()">
+    <label for="username">Username:</label>
+    <input type="text" placeholder="Enter your name" name="Username" [(ngModel)]="patient.username" required /><br><br>    
+    <label for="password">Password:</label>
+    <input type="password" placeholder="Enter your password" name="Password" [(ngModel)]="patient.password" required /><br><br> 
+
+    <label for="Age">Age:</label>
+    <input type="number" placeholder="Enter your age" name="Age" [(ngModel)]="patient.age" required /><br><br> 
+    
+    <label for="Gender">Gender:</label>
+    <input type="text" placeholder="Enter your gender" name="Gender" [(ngModel)]="patient.gender" required/><br><br> 
+    <input type="submit" value="Sign Up">
+    
+  </form>
+ 
+  <input type="button" value="Back" (click)="Onback()">
